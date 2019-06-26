@@ -1,0 +1,303 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"s",
+				"sum2"
+			],
+			[
+				"sm",
+				"sum1"
+			],
+			[
+				"mo",
+				"modInverse"
+			],
+			[
+				"m",
+				"modInverse"
+			],
+			[
+				"arr",
+				"arr2"
+			],
+			[
+				"ar",
+				"arr2"
+			],
+			[
+				"ma",
+				"make"
+			],
+			[
+				"un",
+				"unordered_map\tstandard header (since c++11)"
+			],
+			[
+				"dp",
+				"dp1"
+			],
+			[
+				"fi",
+				"findSum"
+			],
+			[
+				"int",
+				"input"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Install Package Control"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/rishabh/Desktop/sample.js",
+		"/media/rishabh/E Drive/Github/Chef_and_Proxy.cpp",
+		"/media/rishabh/E Drive/Github/Guddu_on_a_Date.cpp",
+		"/media/rishabh/E Drive/Github/Road_Signs.cpp",
+		"/media/rishabh/E Drive/Github/Chef_and_Ingredients.cpp",
+		"/media/rishabh/E Drive/Github/Sum_and_GCD.cpp",
+		"/media/rishabh/E Drive/Github/Lent_Money.cpp",
+		"/media/rishabh/D Drive/Web/WebNodeLive2017Winter-master/Webinar13/mysql_express_server/public_static/script.js",
+		"/media/rishabh/D Drive/Web/WebNodeLive2017Winter-master/Webinar13/mysql_express_server/routes/pages.js",
+		"/media/rishabh/D Drive/Web/WebNodeLive2017Winter-master/Webinar13/mysql_express_server/routes/api.js",
+		"/media/rishabh/D Drive/Web/WebNodeLive2017Winter-master/Webinar13/mysql_express_server/db.js",
+		"/media/rishabh/D Drive/Web/WebNodeLive2017Winter-master/Webinar13/mysql_express_server/server.js",
+		"/media/rishabh/D Drive/Web/WebNodeLive2017Winter-master/Webinar15/SocketIO/server.js",
+		"/media/rishabh/D Drive/Web/WebNodeLive2017Winter-master/Webinar14/SequelizeExpressShoppingApp/PREPARE_DB.md",
+		"/home/rishabh/Desktop/Untitled Folder/possible codes.cpp",
+		"/media/rishabh/D Drive/Web/WebNodeLive2017Winter-master/Webinar13/mysql_express_server/public_static/index.html",
+		"/media/rishabh/D Drive/Web/WebNodeLive2017Winter-master/Webinar13/mysql_express_server/public_static/jquery-3.2.1.js",
+		"/media/rishabh/D Drive/Web/WebNodeLive2017Winter-master/Webinar12/express_sample/routes/todos.js",
+		"/media/rishabh/D Drive/Web/WebNodeLive2017Winter-master/Webinar13/try-mysql-scripts/mysql_scripts/create_table.js",
+		"/media/rishabh/D Drive/Web/WebNodeLive2017Winter-master/Webinar13/try-mysql-scripts/mysql_scripts/insert_data.js",
+		"/media/rishabh/E Drive/Readme file of competitive Coding",
+		"/media/rishabh/E Drive/Github/README.md",
+		"/media/rishabh/D Drive/Web/WebNodeLive2017Winter-master/Webinar13/try-mysql-scripts/MYSQL.md",
+		"/media/rishabh/D Drive/Web/WebNodeLive2017Winter-master/Webinar11/routers-example/server.js",
+		"/media/rishabh/D Drive/Web/WebNodeLive2017Winter-master/Webinar11/routers-example/routes/teachers.js",
+		"/media/rishabh/D Drive/Web/WebNodeLive2017Winter-master/Webinar11/routers-example/routes/students.js",
+		"/media/rishabh/D Drive/Web/WebNodeLive2017Winter-master/Webinar11/another-npm-package/index.js",
+		"/media/rishabh/D Drive/Web/WebNodeLive2017Winter-master/Webinar11/sample-npm-package/index.js",
+		"/media/rishabh/E Drive/coin_change_problem.cpp",
+		"/media/rishabh/E Drive/nCr.cpp",
+		"/media/rishabh/D Drive/Shivam Khatri/Husky-master/templates/chat/chat.html",
+		"/media/rishabh/D Drive/Shivam Khatri/Husky-master/templates/base/search.html",
+		"/media/rishabh/D Drive/Shivam Khatri/Husky-master/templates/base/about.html",
+		"/media/rishabh/D Drive/Shivam Khatri/sucide.github.io-master/index.html",
+		"/media/rishabh/D Drive/Shivam Khatri/sucide.github.io-master/vendor/bootstrap/css/bootstrap.min.css",
+		"/media/rishabh/D Drive/Shivam Khatri/sucide.github.io-master/css/freelancer.min.css",
+		"/home/rishabh/Downloads/startbootstrap-freelancer-gh-pages/index.html",
+		"/home/rishabh/Desktop/index.html",
+		"/media/rishabh/D Drive/Shivam Khatri/sucide.github.io-master/README.md",
+		"/media/rishabh/D Drive/Shivam Khatri/sucide.github.io-master/css/freelancer.css",
+		"/media/rishabh/E Drive/longest_common_substring.cpp",
+		"/media/rishabh/E Drive/LCS.cpp",
+		"/media/rishabh/E Drive/count_ways_to reach_n.cpp",
+		"/media/rishabh/E Drive/Consecutive_1_not_allowed.cpp",
+		"/home/rishabh/Desktop/rishabh.cpp",
+		"/media/rishabh/D Drive/Shivam Khatri/sucide.github.io-master/gulpfile.js",
+		"/media/rishabh/D Drive/Shivam Khatri/sucide.github.io-master/less/freelancer.less",
+		"/media/rishabh/D Drive/Husky-master/requirements.txt",
+		"/media/rishabh/D Drive/sucide.github.io-master/js/contact_me.js",
+		"/media/rishabh/D Drive/sucide.github.io-master/css/freelancer.css",
+		"/home/rishabh/Desktop/sample.html",
+		"/media/rishabh/D Drive/sucide.github.io-master/LICENSE",
+		"/home/rishabh/Desktop/Untitled Folder/tree.cpp",
+		"/home/rishabh/Desktop/Untitled Folder/techgigsf.cpp",
+		"/home/rishabh/Desktop/Untitled Folder/rishabh.cpp",
+		"/home/rishabh/Desktop/Untitled Folder/NOKIA (1).cpp",
+		"/home/rishabh/Desktop/Untitled Folder/CoordinatesOfFib.cpp",
+		"/home/rishabh/Desktop/Untitled Folder/706c.cpp",
+		"/home/rishabh/Desktop/Untitled Folder 2/myserver.js",
+		"/home/rishabh/Downloads/leapfrog_ch__source.txt",
+		"/home/rishabh/Downloads/leapfrog_ch__source (1).txt",
+		"/home/rishabh/Desktop/Untitled Folder 2/package.json",
+		"/home/rishabh/node_modules/accepts/index.js",
+		"/home/rishabh/Desktop/input.txt",
+		"/home/rishabh/Desktop/input.out",
+		"/home/rishabh/Downloads/leapfrog_ch_ (1).txt",
+		"/home/rishabh/Desktop/input,txt",
+		"/home/rishabh/Desktop/async_practical.js",
+		"/home/rishabh/Desktop/Untitled Folder/1_question.cpp",
+		"/home/rishabh/Desktop/minimum_number_of_jumps.cpp",
+		"/media/rishabh/D Drive/Web/WebNodeLive2017Winter-master/Webinar09/async_functinons.js",
+		"/media/rishabh/D Drive/Web/WebNodeLive2017Winter-master/Webinar09/async_advanced.js",
+		"/home/rishabh/Desktop/leapfrog_ch_.out",
+		"/home/rishabh/Downloads/leapfrog_ch_.txt",
+		"/home/rishabh/Desktop/Untitled Folder/input.out",
+		"/home/rishabh/Desktop/Untitled Folder/input.txt",
+		"/media/rishabh/D Drive/WebNodeLive2017Winter-master/Webinar09/async_practical.js",
+		"/home/rishabh/Downloads/checker.cpp",
+		"/home/rishabh/Downloads/checker (1).cpp",
+		"/home/rishabh/Downloads/input.txt",
+		"/home/rishabh/Desktop/New.js",
+		"/media/rishabh/E Drive/subset_sum_problem.cpp",
+		"/media/rishabh/E Drive/LIS.cpp",
+		"/home/rishabh/Downloads/input.out",
+		"/tmp/mozilla_rishabh0/leapfrog_ch_.txt",
+		"/home/rishabh/Desktop/tree.cpp",
+		"/home/rishabh/Desktop/Rachit_graph.cpp"
+	],
+	"find":
+	{
+		"height": 31.0
+	},
+	"find_in_files":
+	{
+		"height": 113.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/C++/C++ Single File.sublime-build",
+	"project": "coin_change_problem.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
