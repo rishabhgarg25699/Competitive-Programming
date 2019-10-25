@@ -1,0 +1,47 @@
+#include<bits/stdc++.h>
+using namespace std;
+ 
+typedef long long int ll;
+#define mx 1000005
+#define mod 1000000007
+// #define mp make_pair
+#define pb push_back
+#define f first
+#define s second
+#define fast_as_levi ios_base::sync_with_stdio(false) , cin.tie(NULL);
+ 
+int main()
+{
+    fast_as_levi;
+    ll t;
+    cin>>t;
+    while(t--)
+    {
+		ll ar[26] = {0};
+		string s;
+		cin>>s;
+		ll i,n = s.length();
+        
+		for(i=0;i<n;i++)
+		{
+		    ll cnt = 0;
+			ll k = s[i]-'a';
+			ll j=i;
+			while(j<n&&s[j]-'a'==k)
+			{
+				j++;
+				cnt++;
+			}
+			if(cnt%2)
+			ar[k]=1;
+			if(i!=j)
+			i=j-1;
+		}
+		for(i=0;i<26;i++)
+		{
+			if(ar[i]==1)
+			cout<<char(i+'a');
+		}
+		cout<<"\n";
+	}
+}
