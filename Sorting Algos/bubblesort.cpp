@@ -1,18 +1,27 @@
-void bubblesort(int mylist[])
+void swap(int *a , int *b)
 {
-    int k=1;
-    while (k==1)
-        {
-            k=0;
-            for (i=1;i<=n;i++)
-            {
-                if (mylist[i]>=mylist[i-1])
-                {
-                    temp=mylist[i];
-                    mylist[i]=mylist[i-1];
-                    mylist[i-1]=temp;
-                    k=1;
-                }
-            }
-        }
+	*a = *a + *b;
+	*b = *a - *b;
+	*a = *a - *b;
+}
+
+void bub_sort(int a[], int size)
+{
+
+	for(int i =size-1; i > 0; i--)
+	{
+		int flag = 0;
+
+		for(int j = 0; j < i; j++)
+		{
+			if(a[j] > a[j+1]) 
+			{
+				swap(a+j, a+j+1);
+
+				flag = 1;
+			}
+
+		}
+		if(flag == 0) break;
+	}
 }
