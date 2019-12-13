@@ -8,17 +8,17 @@ using namespace std;
 
 ll fast_power(ll n, ll k, ll p = MOD) {
 ll r = 1; 
-for (; k; k >>= 1)
- {
- if (k & 1) r = r * n%p; 
- n = n * n%p;
- } 
- return r;
+  for (; k; k >>= 1)
+   {
+    if (k & 1) 
+    {
+      r = r * n%p; 
+    }
+    n = n * n%p;
+   } 
+return r;
  }
  
-
-
-
 
 int main(){
     ios::sync_with_stdio(0);
@@ -27,12 +27,6 @@ int main(){
  cin>>a>>b>>c;
  ll ans=fast_power(a,b,c);
  cout<<ans<<endl;
- 
-
-
-
-    
-    
     
   return 0;
     
