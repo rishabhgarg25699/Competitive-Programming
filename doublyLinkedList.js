@@ -132,21 +132,4 @@ class DoublyLinkedList {
 module.exports = { DoublyLinkedList, Node };
 
 
-// var dll = new DoublyLinkedList;
-
-// dll.insertAtBeginning(32);
-// dll.insertAtBeginning(33);
-// dll.insertAtBeginning(34);
-// dll.insertAtBeginning(35);
-// dll.insertAtBeginning(36);
-// dll.insertAtBeginning(37);
-// dll.insertAt(11, 3);
-
-// dll.deleteByIndex(3);
-// //console.log(dll.size());
-// //dll.deleteByValue(33);
-// //dll.print();
-// console.log(dll.isEmpty());
-// console.log(dll.length());
-// //dll.size()
 
