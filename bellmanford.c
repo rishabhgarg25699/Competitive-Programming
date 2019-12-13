@@ -80,9 +80,9 @@ void bellman(struct Graph *graph,int src){
 int main()
 {
 	int v,e;
-	printf("Enter v: ");
+	printf("Enter no.of vertices: ");
 	scanf(" %d",&v);
-	printf("Enter e: ");
+	printf("Enter no.of edges: ");
 	scanf(" %d",&e);
 	struct Graph *graph=creategraph(v,e);
 	int i,src,dst,weight,source;
