@@ -41,20 +41,20 @@ public class DFS
 			}
 	
   
-					void DFSearch(int v)
+			void DFSearch(int v)
+			{
+						
+				int visited[] = new int[V];
+						
+				DFTraversal(v, visited);
+					for (int i=1;i<V;i++)
 					{
-						
-						int visited[] = new int[V];
-						
-						DFTraversal(v, visited);
-						for (int i=1;i<V;i++)
-						{
-							if(visited[i]==0)
+						if(visited[i]==0)
 							{
 							 DFTraversal(i, visited);
 							}
-						}
 					}
+			}
 				 
 		public static void main(String args[])
 		{
