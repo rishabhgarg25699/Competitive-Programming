@@ -10,8 +10,8 @@ def binary_search (arr, l, r, x):
     else: 
         return -1
  
-arr = [ 2, 3, 4, 10, 40 ] 
-x = 10
+arr = list(map(int,input('Enter the array: ').split()))
+x = int(input('Enter the number to be searched: '))
 result = binary_search(arr, 0, len(arr)-1, x) 
   
 if result != -1: 

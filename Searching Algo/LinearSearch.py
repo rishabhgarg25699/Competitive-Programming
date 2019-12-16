@@ -5,9 +5,9 @@ def linear_search(arr, n, x):
             return i 
     return -1 
   
-arr = [ 2, 3, 4, 10, 40 ] 
-x = 10 
-n = len(arr) 
+arr = list(map(int,input('Enter the array: ').split()))
+x = int(input('Enter the number to be searched: '))
+n = len(arr)
 result = linear_search(arr, n, x) 
 if(result == -1):
     print("Element is not present in array") 

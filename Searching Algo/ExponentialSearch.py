@@ -16,9 +16,9 @@ def exponentialSearch(arr, n, x):
         i = i * 2
     return binarySearch( arr, i / 2, min(i, n), x) 
       
-arr = [2, 3, 4, 10, 40] 
-n = len(arr) 
-x = 10
+arr = list(map(int,input('Enter the array: ').split()))
+x = int(input('Enter the number to be searched: '))
+n = len(arr)
 result = exponentialSearch(arr, n, x)
 if result != -1: 
     print("Element found at index",result) 

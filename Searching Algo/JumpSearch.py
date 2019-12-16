@@ -19,9 +19,9 @@ def jump_search( arr , x , n ):
       
     return -1
    
-arr = [ 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610 ] 
-x = 55
-n = len(arr) 
+arr = list(map(int,input('Enter the array: ').split()))
+x = int(input('Enter the number to be searched: '))
+n = len(arr)
 
 result = int(jump_search(arr, x, n)) 
   
