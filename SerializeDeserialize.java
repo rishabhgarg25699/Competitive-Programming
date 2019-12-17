@@ -6,7 +6,7 @@
  * 
  * (Assumption: Binary Tree is of unique Character nodes)
  * 
- * (Serializarion) Algorithm:
+ * (Serialization) Algorithm:
  *  Find the Inorder traversal of the tree
  *  Find the Preorder traversal of the tree
  *  Concatenate the results
@@ -14,7 +14,7 @@
  *  Time Complexity: O(n) {n is number of nodes}
  *  Extra Space Complexity: O(h) {h is height of tree}
  * 
- * (Deserializarion) Algorithm:
+ * (Deserialization) Algorithm:
  *  Separate out the Inorder and Preorder traversals
  *  For each entry, let c, in the Preorder traversal
  *    Create a Node for c
