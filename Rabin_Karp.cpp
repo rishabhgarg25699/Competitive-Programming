@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long int ll;
-ll polyhash(string S,ll p,ll x)
+ll polyhash(string S,ll p,ll x)              //Using Polynomial Hash
 {
     ll hash=0;
     for(ll i=S.length()-1;i>=0;i--)
@@ -10,7 +10,7 @@ ll polyhash(string S,ll p,ll x)
     }
     return hash;
 }
-vector <ll> precomputehashes(string T,ll pl,ll p,ll x)
+vector <ll> precomputehashes(string T,ll pl,ll p,ll x)              
 {
     vector<ll> H;
     for(ll i=0;i<(T.length()-pl+1);i++)
@@ -36,7 +36,7 @@ vector <ll> precomputehashes(string T,ll pl,ll p,ll x)
     }
     return H;
 }
-bool areequal(string s1,string s2)
+bool areequal(string s1,string s2)               //To check that the two strings entered are equal
 {
     if(s1.length()!=s2.length())
     {
@@ -49,7 +49,7 @@ bool areequal(string s1,string s2)
     }
     return true;
 }
-vector<ll> RabinKarp(string T,string P)
+vector<ll> RabinKarp(string T,string P)            
 {
     ll p=1000000007;
     ll x=rand()%(p-1)+1;
@@ -73,7 +73,7 @@ int main()
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
-    string P,T;
+    string P,T;                   //Enter Pattern as P and Text as t
     cin>>P>>T;
     vector<ll> result;
     result=RabinKarp(T,P);
