@@ -1,24 +1,31 @@
+/** Time Complexity Analysis : The time complexity of the ternary search tree operations is similar to that 
+of binary search tree. i.e. the insertion, deletion and search operations take 
+time proportional to the height of the ternary search tree.
+
+Space Complexity Analysis : The space is proportional to the length of the string to be stored.
+
+**/
+
 import java.util.ArrayList;
 import java.util.List;
-
-public class TernarySearchTree<Value> {
+public class TernarySearchTree<Value> 
+{
     private int size;           // size
     private Node<Value> root;   // root of TST
 
-    private static class Node<Value> {
+    private static class Node<Value> 
+	{
         private char c;                        // Character
         private Node<Value> left, mid, right;  // Subtries
         private Value val;
     }
 
-  
     public int size()
      	{
 		   return size;
 		}
-
+		
     public boolean contains(String key) { return get(key) != null; }
-
 
     public Value get(String key) {
         if (key == null)
@@ -31,7 +38,9 @@ public class TernarySearchTree<Value> {
     }
 
     // Return subtrie corresponding to given key
-    private Node<Value> get(Node<Value> x, String key, int d) {
+	
+    private Node<Value> get(Node<Value> x, String key, int d) 
+	{
         if (x == null)
             return null;
 
@@ -57,11 +66,12 @@ public class TernarySearchTree<Value> {
 		}
     }
 
-
-    public void put(String key, Value val) {
-        if (key == null) {
+    public void put(String key, Value val)     // Put Method for check null and already contains
+	{
+        if (key == null)
+			{
             throw new IllegalArgumentException("calls put() with null key");
-        }
+            }
 
         if (!contains(key))
             size++;
@@ -69,14 +79,14 @@ public class TernarySearchTree<Value> {
         root = put(root, key, val, 0);
     }
 
-    private Node<Value> put(Node<Value> x, String key, Value val, int d) {
+    private Node<Value> put(Node<Value> x, String key, Value val, int d) 
+	{
         char c = key.charAt(d);
         if (x == null) 
 		{
             x = new Node<>();
             x.c = c;
         }
-
         if (c < x.c)         
 		{			
 	x.left  = put(x.left,  key, val, d);
@@ -92,12 +102,10 @@ public class TernarySearchTree<Value> {
         else 
         {	
 	        x.val   = val;
-		}
-		
+		}	
         return x;
     }
-
-  
+	
     public List<Value> valuesWithPrefix(String prefix) {
         if (prefix == null) {
             throw new IllegalArgumentException("calls keysWithPrefix() with null argument");
@@ -115,7 +123,8 @@ public class TernarySearchTree<Value> {
     }
 
    
-    private void collect(Node<Value> x, StringBuilder prefix, List<Value> values) {
+    private void collect(Node<Value> x, StringBuilder prefix, List<Value> values)
+	{
         if (x == null) return;
         collect(x.left,  prefix, values);
         if (x.val != null) values.add(x.val);

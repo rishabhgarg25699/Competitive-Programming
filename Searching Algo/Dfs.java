@@ -1,13 +1,15 @@
+/**
+Time Complexity Analysis : I the worst case you would need to visit
+all the vertex and edge hence the time complexity in the worst case is O(V+E).
+
+While Space complexity for DFS is O(h) where h is the maximum height of the tree.
+**/
 
 import java.util.*;
- 
 public class DFS
 {
 	int V;    
-    
-   
     LinkedList<Integer> adjList[]; 
- 
 			DFS(int v)
 			{
 				V = v;
@@ -17,17 +19,14 @@ public class DFS
 					adjList[i] = new LinkedList();  
 				}
 			}
-			
-			
-			
-    //adding edges to graph 
-    void addEdgesToGraph(int v, int u)
+	
+    //adding edges to graph for connections
+    void addEdgesToGraph(int v, int u)     
     {
         adjList[v].add(u);   
     }
 	
-  
-			void DFTraversal(int v,int visited[])
+			void DFTraversal(int v,int visited[])   // Traversal
 			{
 				visited[v] = 1;
 				System.out.print(v + " ");
@@ -39,11 +38,9 @@ public class DFS
 						DFTraversal(n, visited);
 				}
 			}
-	
-  
-			void DFSearch(int v)
-			{
-						
+			
+			void DFSearch(int v)  
+			{					
 				int visited[] = new int[V];
 						
 				DFTraversal(v, visited);
@@ -54,8 +51,8 @@ public class DFS
 							 DFTraversal(i, visited);
 							}
 					}
-			}
-				 
+			}	
+			
 		public static void main(String args[])
 		{
 			DFS d1 = new DFS(8);
