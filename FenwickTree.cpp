@@ -1,14 +1,15 @@
 #include <iostream>
+#include <vector>
 
 template <typename T>
 class FenwickTree {
 	private:
 		int n;
-		vector<T> bit;
+		std::vector<T> bit;
 	public:
 		FenwickTree(int n) {
 			this -> n = n;
-			bit = vector<T>(n+1);
+			bit = std::vector<T>(n+1);
 		}
 
 		void update(int x, T delta) {
