@@ -1,51 +1,62 @@
-#include<iostream>
-#include<string>
-#define n 200
-
+#include<bits/stdc++.h>
 using namespace std;
+void countingSort(int *a,int n,int range)
+{
+    int *freq=new int[range];
+    int *output=new int[n];
+    memset(freq,0,sizeof(freq[0])*range);
+    /*cout<<"Range of elements entered "<<range<<endl;
+    cout<<"\nFrequency Array Initially:\n";
+    for(int i=0;i<range;i++){
+        cout<<freq[i]<<" ";
+    }
+    cout<<"\n";*/
+    for(int i=0;i<n;i++){
+        freq[a[i]]++;
+    }
+    /*cout<<"\nFrequency Array :\n";
+    for(int i=0;i<range;i++){
+        cout<<freq[i]<<" ";
+    }
+    cout<<"\n";*/
 
-void count_sort(int ch[],int num){
-	int arr[n];
-	int temp,i=0;
-	for(i=0;i<n;i++){
-		arr[i]=0;
-	}	
-	
-	for(i=0;i<num;i++){
-		temp=ch[i];
-		arr[temp]++;
-	}	
-	
-	for(i=1;i<n;i++){
-		arr[i]+=arr[i-1];
-	}	
-	for(i=n-1;i>=0;i--){
-		arr[i]=arr[i-1];
-	}
-	
-	int outputarr[num];
-	for(i=0;i<num;i++ ){
-		temp=ch[i];
-		outputarr[arr[temp]]=temp;
-		arr[temp]++;
-	}
-	for(i=0;i<num;i++){
-		ch[i]=outputarr[i];	
-	}
-	
+    for(int i=1;i<range;i++){
+        freq[i]+=freq[i-1];
+    }
+    /*cout<<"\nUPDATED Frequency Array :\n";
+    for(int i=0;i<range;i++){
+        cout<<freq[i]<<" ";
+    }
+    cout<<"\n";*/
+    for(int i=n-1;i>=0;i--){
+        freq[a[i]]--;
+        output[freq[a[i]]]=a[i];
+    }
+    for(int i=0;i<n;i++){
+        a[i]=output[i];
+    }
 }
+int main()
+{
+    int n,s,e;
+    cout<<"Enter Range you want to Sort StartElement,EndElement\n";
+    cin>>s>>e;
+    n=abs(e-s+1);
+    int *a=new int[n];
 
-int main(){
-	cout<<"Input format :  Number of elements of array\n                The elements\n";
-	int k,i=0;
-	scanf("%d",&k);
-	int a[k];
-	for(i=0;i<k;i++){
-		cin>>a[i];
-	}
-	count_sort(a,k);
-	for(i=0;i<k;i++){
-		cout<<a[i]<<" ";
-	}
-	return 0;
+    for(int i=0;i<n;i++){
+        cin>>a[i];
+    }
+    //cout<<"No of elements entered "<<n<<endl;
+    //cout<<"Range of elements entered "<<e<<endl;
+    cout<<"\nBefore Sorting :\n";
+    for(int i=0;i<n;i++){
+        cout<<a[i]<<" ";
+    }
+    countingSort(a,n,e+1);
+    cout<<"\nAfter Sorting :\n";
+    for(int i=0;i<n;i++){
+        cout<<a[i]<<" ";
+    }
+    return 0;
 }
