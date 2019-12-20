@@ -1,9 +1,3 @@
-class Point:
-    def __init__(self,x,y):
-        self.point=[]
-        self.point.append(x)
-        self.append.append(y)
-
 class Matrix:
     def __init__(self,rows,cols):
         self.matrix=[]
