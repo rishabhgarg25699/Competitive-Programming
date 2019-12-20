@@ -54,3 +54,19 @@ int main()
         cout<<"Node-->"<<i+1<<" "<<"Parent-->"<<parent[i]+1<<" "<<"Rank-->"<<ranki[i]<<endl;           // to print node ,it's parent and it's rank
     }
 } 
+
+/* INPUT:
+   5 4
+   1 3
+   2 4
+   1 2
+   1 4 
+   
+   OUTPUT:
+   Node-->1 Parent-->1 Rank-->2
+   Node-->2 Parent-->1 Rank-->1
+   Node-->3 Parent-->1 Rank-->0
+   Node-->4 Parent-->2 Rank-->0
+   Node-->5 Parent-->5 Rank-->0
+   
+   */
