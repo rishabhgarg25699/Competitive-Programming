@@ -25,10 +25,10 @@ void disp(int n)
 }
 int main()
 {
-    int n;
+    	int n;
 	cout<<"Enter a number: ";
 	cin>>n;
-    printf("The representation for %d is \n", n);
-    disp(n);
-    return 0;
+	printf("The representation for %d is \n", n);
+	disp(n);
+	return 0;
 }
