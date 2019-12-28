@@ -27,7 +27,7 @@ $ git clone https://github.com/Your_Username/Algo_Ds_Notes.git
 
 > This makes a local copy of repository in your machine.
 
-Once you have cloned the `Algo_Ds_Notes` repository in Github, move to that folder first using change directory command on linux and Mac.
+Once you have cloned the `Algo_Ds_Notes` repository in Github, move to that folder first using change directory command on Linux, Windows and Mac.
 
 ```sh
 # This will change directory to a folder Algo_Ds_Notes
@@ -133,7 +133,7 @@ Then add a title and description to your pull request that explains your preciou
 
 We love to have `articles` and `codes` in different languages and `betterment` of existing ones.
 
-Please discuss it with us first by creating new issue.
+Please discuss it with us first before creating [new-issue](https://github.com/rishabhgarg25699/Competitive-Programming/issues/new).
 
 :tada: :confetti_ball: :smiley: _**Happy Contributing**_ :smiley: :confetti_ball: :tada:
 
@@ -150,6 +150,6 @@ Please discuss it with us first by creating new issue.
 - Websites :computer:
     - [GeeksforGeeks](http://www.geeksforgeeks.org)
     - [hackerearth](https://www.hackerearth.com/notes)
-    - [topcoder](https://www.topcoder.com/community/data-science/data-science-tutorials)
+    - [topcoder](https://www.topcoder.com/community/competitive-programming/tutorials/)
     - [tutorialspoint](http://www.tutorialspoint.com)
     - [Wikipedia](https://en.wikipedia.org)
