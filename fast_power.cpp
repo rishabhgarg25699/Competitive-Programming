@@ -12,7 +12,7 @@ ll r = 1;
    {
     if (k & 1) 
     {
-      r = r * n%p; 
+        r = r * n%p; 
     }
     n = n * n%p;
    } 
@@ -23,11 +23,9 @@ return r;
 int main(){
     ios::sync_with_stdio(0);
     cin.tie(0);cout.tie(0);
- ll a,b,c;
- cin>>a>>b>>c;
- ll ans=fast_power(a,b,c);
- cout<<ans<<endl;
-    
-  return 0;
-    
+     ll a,b,c;
+     cin>>a>>b>>c;
+     ll ans=fast_power(a,b,c);
+     cout<<ans<<endl;
+      return 0;  
 }
