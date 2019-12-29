@@ -19,7 +19,7 @@ void simpleSieve(ll limit, vector<ll> &prime)        //implementation of simple 
 		if (mark[p] == true) 	
 		{ 	
 			for (ll i=p*2; i<limit; i+=p) 	
-				mark[i] = false; 	
+		        mark[i] = false; 	
 		} 	
 	} 	
 	for (ll p=2; p<limit; p++) 	
@@ -37,8 +37,8 @@ void segmentedSieve(ll n)                 //Function to implement Segmented Siev
 	vector<ll> prime; 	
 	simpleSieve(limit, prime); 	
 
-  // Divide the range [0..n-1] in different segments 	
-  // We have chosen segment size as sqrt(n).	
+        // Divide the range [0..n-1] in different segments 	
+        // We have chosen segment size as sqrt(n).	
 	ll low = limit; 	
 	ll high = 2*limit; 	
 	while (low < n) 	
@@ -67,9 +67,9 @@ int main()
     ios_base::sync_with_stdio(false);	
     cin.tie(NULL);	
     cout.tie(NULL);	
-	segmentedSieve(100000001); 	
-	ll t,n,c,i,b;	
-	cin>>t;                              // t= number of test cases	
+    segmentedSieve(100000001); 	
+    ll t,n,c,i,b;	
+    cin>>t;                              // t= number of test cases	
     while(t--)	
     {	
         cin>>n;                        // n=number of integers you want to enter	
