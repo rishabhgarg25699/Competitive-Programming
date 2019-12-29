@@ -1,8 +1,6 @@
 //Dynamic Programming
-//Matrix chain array problem
-
+//Matrix chain multiply problem
 #include<bits/stdc++.h>
-
 using namespace std;
 
 //For printing the Sequence with parenthesis
@@ -24,12 +22,10 @@ void prt(int *arr,int i,int j,int n)
         cout<<")(";
         prt(arr,k,j,n);
         cout<<")";
-
     }
 }
 
 //Function to find the positions of the brackets
-
 void matrix_chain_multiply(int n,int p[])
 {
     int arr1[n][n],arr2[n][n];
@@ -48,30 +44,23 @@ void matrix_chain_multiply(int n,int p[])
                 q=arr1[i][k-1]+arr1[k][j]+p[i]*p[k]*p[j+1];
                 if(k==i+1)
                 {
-
                     arr1[i][j]=q;
                     arr2[i][j]=k;
-
                 }
                 else if(arr1[i][j]>q)
                 {
-                   arr1[i][j]=q;
-                   arr2[i][j]=k;
+                    arr1[i][j]=q;
+                    arr2[i][j]=k;
                 }
             }
-
         }
     }
-
     //Outputting the results
     cout<<"Minimum number of scalar multiplications: "<<arr1[0][n-1]<<endl;
     prt((int *)arr2,0,n-1,n);
 }
 
-using namespace std;
-
 //Driver code
-
 int main()
 {
     int n;
@@ -86,10 +75,6 @@ int main()
         cin>>p[i];
     }
     matrix_chain_multiply(n,p);
-
-
-
-
     return 0;
 }
 
