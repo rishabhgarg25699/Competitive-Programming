@@ -4,107 +4,68 @@
 using namespace std;
 
 // Declare linked list class
-
 class STACK {
-
    int value;                     //stores value of node
-
-  class STACK* LINK;             //pointer to the next node
-
-  STACK();                       //constructer to initialise stack to NULL
-
+   class STACK* LINK;             //pointer to the next node
+   STACK();
                     //Declaring functions of the STACK CLASS....
-
-  int isEmptystack();           //private function: to check if the stack is empty or not
-
-  public: //public functions:
-
-  void push_value(int value);   // 1. PUSH: Function to add an element to the top of the stack
-
-  void pop_value();             //2. POP: Function to pop top element from the stack
-
-  void display_stack();         //3. DISPLAY: Function to print all the elements of the stack
-
-  void TOP_value();             //4. PEEK: Function to display the topmost value of stack
-
+  int isEmptystack();
+  public:
+  void push_value(int value);
+  void pop_value();
+  void display_stack();
+  void TOP_value();
 };
 
                        //DEFINING all the above listed functions...
-
+//constructer to initialise stack to NULL
 STACK::STACK()
 {
   class STACK* top;
   top=NULL;
 }
-
-
+// Function to check if the stack is empty or not
 int STACK::isEmptystack()
 {
 	return top == NULL;
 }
 
+// 1. PUSH: Function to add an element to the top of the stack
 void STACK::push_value(int value)
 {
-	// create new node temp and allocate memory
   STACK* temp;
-	temp = new STACK();
-
-	// check if stack (heap) is full. Then inserting an element would
-	// lead to stack overflow
+ 	temp = new STACK();
 	if (!temp)
+		cout << "\nHeap Overflow";                 //checking for memory overflow...
+	else
   {
-		cout << "\nHeap Overflow";
-		exit(1);
-	}
-
- //assign the value to temp
-  temp->value=value;
-
-// link temp to the top
-  temp->LINK=top;
-
-//make new node temp the top of the list..
-  top=temp;
-
-//release memory of the temp...
+   temp->value=value;
+   temp->LINK=top;
+   top=temp;                                   //assigning temp to top...
+  }
   free(temp);
-
 }
 
+ //2. POP: Function to pop top element from the stack
 void STACK::pop_value()
 {
-
-	// check for stack underflow
-	if (isEmptystack()) {
+	if (isEmptystack())
 		cout << "\nStack is Empty" << endl;
-		exit(1);
-	}
+
 	else {
-
     STACK* temp;
-		// assign top to temp
 		temp = top;
-
-		// assign NEXT node to top
 		top = top->LINK;
-
-    //link the temp node to NULL to disconnect it from the list...
-    temp->LINK==NULL;
-
-    //display the element..
+    temp->LINK==NULL;                          //disconnecting temp from the list
     cout<<"Element popped:"<<temp->value;
-
-		// release memory of the node
-		free(temp);
+		free(temp);                                //releasing memory of temp
 	}
 }
 
-
+//3. DISPLAY: Function to print all the elements of the stack
 void STACK::display_stack()
 {
 	STACK* temp;
-
-	//checking for empty stack..
 	if (top == NULL) {
 		cout << "\nStack is Empty";
 	}
@@ -113,50 +74,63 @@ void STACK::display_stack()
 		temp = top;
 		while (temp != NULL)
     {
-
-			// printing current node data..
-			cout << temp->data << " ";
-
-			// assign temp link to temp i.e moving to the next node..
+			cout << temp->data << " ";                //displaying element value..
 			temp = temp->link;
 		}
 	}
-  free(temp);
+  free(temp);                                   //releasing memory of temp
 }
 
+//4. PEEK: Function to display the topmost value of stack
 STACK::TOP_value()
 {
  cout<<"Top_value:"<<top->value;
 }
 
-// illustrating and creating a stack in main ..
-
+// illustrating and creating stacks in main ..
 int main()
 {
-  STACK OB1; //creating an object of a stack class
-    //likewise we can create multiple stacks by creating multiple objects!!
-
-	// push the elements to the stack
-	OB1.push_value(96);
-	OB1.push_value(54);
-	OB1.push_value(32);
-	OB1.push_value(81);
-  OB1.push_value(23);
-
-  //illustrating some more fuctions
-
-	// display stack elements
-	OB1.display_stack();
-
-	// delete top 2 elements of stack
-	OB1.pop_value();
-	OB1.pop_value();
-
- //displaying the top value of the stack
-  OB1.TOP_value();
-
-	// displaying all stack elements after pop function
-	OB1.display_stack();
-
+  int n,j;
+  cout<<"Enter the no. of stacks to be created:";                 //creating multiple stacks
+  cin>>j;
+  STACK* OB[j];
+  for(int i=0;i<j;i++)
+  {
+    char y='y';
+    cout<<"\n Enter stack no. "<<i+1<<":";
+    while(y=='y')
+    {
+      int value;
+      cout<<"\n Enter element:";
+      cin>>value;
+      OB[i].push_value(value);                                //push_function...
+      cout<<"\n press y to enter another element:";
+      cin>>y;
+    }
+  }
+  //illustrating some more fuctions....
+	// displaying stacks...
+	for(int i=0;i<j;i++)
+  {
+    cout<<"\n Displaying stack no. "<<i+1<<":";
+    OB[i].display_stack();
+  }
+// pop function...
+ cout<<"\nEnter stack no. to pop its element(s):";
+ cin>>n;
+ if(n<=j)
+ {
+  char y='y';
+  while(y=='y')
+  {
+    OB[n-1].pop_value();
+    cout<<"\npress y to continue:";
+    cin>>y;
+  }
+ cout<<"\nCurrent ";
+ OB[n-1].TOP_value();                                            //displaying top value...
+ }
+ else
+  cout<<"\nstack not present!";
 	return 0;
 }
