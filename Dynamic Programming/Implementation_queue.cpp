@@ -1,136 +1,142 @@
-// C++ program to Implement a stack
+// C++ program to Implement a QUEUE
 //using linked list and classes
 #include <bits/stdc++.h>
 using namespace std;
 
-// Declare linked list class
-class STACK {
-   int value;                     //stores value of node
-   class STACK* LINK;             //pointer to the next node
-   STACK();
-                    //Declaring functions of the STACK CLASS....
-  int isEmptystack();
+// Declare linked list queue class
+
+class QUEUE
+{
+  int value;
+  class QUEUE* LINK;
+  QUEUE();
+                    //Declaring functions of the QUEUE CLASS..
+  int isEmptyqueue();
   public:
-  void push_value(int value);
-  void pop_value();
-  void display_stack();
-  void TOP_value();
+  void enqueue(int value);
+  void dequeue();
+  void display_queue();
 };
 
                        //DEFINING all the above listed functions...
-//constructer to initialise stack to NULL
-STACK::STACK()
+//constructer to initialise front and rear pointers to NULL
+QUEUE::QUEUE()
 {
-  class STACK* top;
-  top=NULL;
-}
-// Function to check if the stack is empty or not
-int STACK::isEmptystack()
-{
-	return top == NULL;
+  class QUEUE* front, rear ;
+  front=rear=NULL;
 }
 
-// 1. PUSH: Function to add an element to the top of the stack
-void STACK::push_value(int value)
+// to check if the queue is empty or not
+int QUEUE::isEmptyqueue()
 {
-  STACK* temp;
- 	temp = new STACK();
+	return front == NULL;              //returns true or false value
+}
+
+// Function to add an element at the back of the queue
+void QUEUE::enqueue(int value)
+{
+  QUEUE* temp;
+	temp = new QUEUE();               // create new node temp and allocate memory
 	if (!temp)
-		cout << "\nHeap Overflow";                 //checking for memory overflow...
-	else
   {
+		cout << "\nHeap Overflow";       //check for heap overfloW
+		exit(1);
+	}
    temp->value=value;
-   temp->LINK=top;
-   top=temp;                                   //assigning temp to top...
-  }
+   temp->LINK=NULL;
+
+if(front==NULL)
+{
+    front=rear=temp;                 // if front is null i.e. queue is empty, we assign the value to both front and rear
+}
+else
+{
+  rear->LINK=temp;
+  rear=temp;
+}
   free(temp);
 }
 
- //2. POP: Function to pop top element from the stack
-void STACK::pop_value()
+// Function to remove the front most element of the queue
+void QUEUE::dequeue()
 {
-	if (isEmptystack())
-		cout << "\nStack is Empty" << endl;
-
-	else {
-    STACK* temp;
-		temp = top;
-		top = top->LINK;
-    temp->LINK==NULL;                          //disconnecting temp from the list
-    cout<<"Element popped:"<<temp->value;
-		free(temp);                                //releasing memory of temp
-	}
-}
-
-//3. DISPLAY: Function to print all the elements of the stack
-void STACK::display_stack()
-{
-	STACK* temp;
-	if (top == NULL) {
-		cout << "\nStack is Empty";
+	if (isEmptyqueue()) {
+		cout << "\nqueue is Empty" << endl;
 	}
 	else
   {
-		temp = top;
+    QUEUE* temp;
+		temp = front;                                   //assign front to temp
+		front = front->LINK;
+    if(isEmptyqueue())
+      rear=NULL;
+    temp->LINK==NULL;                               //disconnect temp from the list
+    cout<<"Front most element deleted:"<<temp->value<<endl;
+		free(temp);
+	}
+}
+
+//Function to print all the elements of the queue
+void QUEUE::display_queue()
+{
+	QUEUE* temp;
+	if (isEmptyqueue()) {
+		cout << "\nQueue is Empty";
+	}
+	else
+  {
+     temp = front;
 		while (temp != NULL)
     {
-			cout << temp->data << " ";                //displaying element value..
+			cout << temp->data << " ";
 			temp = temp->link;
 		}
 	}
-  free(temp);                                   //releasing memory of temp
+  free(temp);
 }
 
-//4. PEEK: Function to display the topmost value of stack
-STACK::TOP_value()
-{
- cout<<"Top_value:"<<top->value;
-}
-
-// illustrating and creating stacks in main ..
+// illustrating and creating a queue in main ..
 int main()
 {
   int n,j;
-  cout<<"Enter the no. of stacks to be created:";                 //creating multiple stacks
+  cout<<"Enter the no. of queues to be created:";
   cin>>j;
-  STACK* OB[j];
+  QUEUE* OB[j];
   for(int i=0;i<j;i++)
   {
     char y='y';
-    cout<<"\n Enter stack no. "<<i+1<<":";
+    cout<<"\n Enter queue no. "<<i+1<<":";
     while(y=='y')
     {
       int value;
       cout<<"\n Enter element:";
       cin>>value;
-      OB[i].push_value(value);                                //push_function...
+      OB[i].enqueue(value);
       cout<<"\n press y to enter another element:";
       cin>>y;
     }
   }
   //illustrating some more fuctions....
-	// displaying stacks...
+	// displaying queues...
 	for(int i=0;i<j;i++)
   {
-    cout<<"\n Displaying stack no. "<<i+1<<":";
-    OB[i].display_stack();
+    cout<<"\n Displaying queue no. "<<i+1<<":";
+    OB[i].display_queue();
   }
-// pop function...
- cout<<"\nEnter stack no. to be dequeued:";
+// dequeue function...
+ cout<<"\nEnter queue no. to be dequeued:";
  cin>>n;
  if(n<=j)
  {
   char y='y';
   while(y=='y')
   {
-    OB[n-1].pop_value();
-    cout<<"\npress y to continue:";
+    OB[n-1].dequeue();
+    cout<<"\npress y to continue:";                               //if you want to dequeue one more element from list
     cin>>y;
   }
- cout<<"\nCurrent ";
- OB[n-1].TOP_value();                                            //displaying top value...
  }
  else
-  cout<<"\nstack not present!";
+  cout<<"\nQueue not present!";
 	return 0;
 }
