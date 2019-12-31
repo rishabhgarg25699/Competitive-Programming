@@ -1,5 +1,8 @@
-''' Given a non-negative integer numRows, generate the first numRows of Pascal's triangle.
-    pascal's triangle :https://upload.wikimedia.org/wikipedia/commons/0/0d/PascalTriangleAnimated2.gif'''
+''' 
+Given a non-negative integer numRows,generate the first numRows of Pascal's triangle.
+pascal's triangle :https://upload.wikimedia.org/wikipedia/commons/0/0d/PascalTriangleAnimated2.gif
+
+'''
 
 numRows=int(input())
 if(numRows==0):
