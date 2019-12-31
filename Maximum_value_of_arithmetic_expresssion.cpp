@@ -7,15 +7,13 @@ using namespace std;
 long long calculate(long long sha, long long roop, char xyz) 	
 {	
     if (xyz == '*')	
-    return sha * roop;   //return after multiplying	
-    else 	
-    if (xyz == '+')	
-    return sha + roop;   //return after adding	
-    else 	
-    if (xyz == '-')	
-    return sha - roop;   //return after subtracting	
+        return sha * roop;   //return after multiplying	
+    else if (xyz == '+')	
+        return sha + roop;   //return after adding	
+    else if (xyz == '-')	
+        return sha - roop;   //return after subtracting	
     else	
-    assert(0);	
+        assert(0);	
 }	
 int main()	
 {	
