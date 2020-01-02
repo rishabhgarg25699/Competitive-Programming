@@ -30,11 +30,11 @@ int main()
  else
   {for(i=0;i<n;i++)
      {if(narr[i]==garr[j])
-	{if(j==0)	
-	   cout<<i+1<<" ";
-	 else
+	    {if(j==0)	
+	      cout<<i+1<<" ";
+	     else
            cout<<i+1<<" ";
-	 j++;	
+	     j++;	
         }
       if(j>=g)
        break;
