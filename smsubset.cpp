@@ -45,7 +45,7 @@ int main()
 	     j++;	
         }
       if(j>=g)
-       break;
+        break;
      }
   }  
  return 0;	
