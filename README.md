@@ -1,13 +1,10 @@
 [![Gitter](https://badges.gitter.im/Algo_Ds_Notes/Algo_Ds_Notes.svg)](https://gitter.im/rishabhgarg25699)
-<a href='https://play.google.com/store/apps/details?id=com.Scibot.aniket.algopack&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' height="35"></a>
 
 Join with me on telegram group  https://t.me/joinchat/GL4Y8RREZbz-Cp78R869CQ
 
 ## Welcome to Algorithm and Data Structure Notes :clipboard:
 
 Our open source community is focussed on understanding the concepts and while doing so, whenever someone gets trapped, they can see one way to code in any language they want. So, we are developing a repository having implementation in as many languages as we can.
-
-> [Index](INDEX.md)
 
 ## Steps to follow :scroll:
 
