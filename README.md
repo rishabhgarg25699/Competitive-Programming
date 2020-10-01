@@ -141,12 +141,16 @@ Please discuss it with us first before creating [new-issue](https://github.com/r
     - Data Structures with C by Schaum Series
     - Data Structures: A Pseudocode Approach with C by Richard F. Gilberg
     - Fundamentals Of Data Structures in C by Horowitz
-    - Introduction To Algorithms By Thomas H. Cormen
+    - Introduction To Algorithms By (CLRS) Cormen, Leiserson, Rivest , Stein 
     - Java: The Complete Reference By Herbert Schildt
     - Object Oriented Programming with C++ by E Balaguruswamy
+    - The C++ Programming Language by Bjarne Stroutstrap
 - Websites :computer:
     - [GeeksforGeeks](http://www.geeksforgeeks.org)
     - [hackerearth](https://www.hackerearth.com/notes)
     - [topcoder](https://www.topcoder.com/community/competitive-programming/tutorials/)
     - [tutorialspoint](http://www.tutorialspoint.com)
     - [Wikipedia](https://en.wikipedia.org)
+    - [Codeforces](https://codeforces.com)
+    - [Codechef](https://codechef.com)
+    - [OEIS](https://oeis.org/)
