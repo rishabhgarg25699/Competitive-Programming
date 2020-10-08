@@ -12,24 +12,27 @@ typedef long long int ll;
 vector<ll> vect;	
 void simpleSieve(ll limit, vector<ll> &prime)        //implementation of simple sieve	
 { 	
-	bool mark[limit+1]; 	
-	memset(mark, true, sizeof(mark)); 	
-	for (ll p=2; p*p<limit; p++) 	
-	{ 	
-		if (mark[p] == true) 	
-		{ 	
-			for (ll i=p*2; i<limit; i+=p) 	
-		        mark[i] = false; 	
-		} 	
-	} 	
-	for (ll p=2; p<limit; p++) 	
-	{ 	
-		if (mark[p] == true) 	
-		{ 	
-			prime.push_back(p);                          //prime is a vector which stores prime numbers	
-			vect.push_back(p);                           	
-		} 	
-	} 	
+    bool mark[limit+1];     
+    memset(mark, true, sizeof(mark)); 
+    for(ll i=4;i<=limit;i+=2)mark[i]=false;   // added so that only odd prime are to marked
+    for (ll p=3; p*p<=limit; p+=2)  //going for odd numbers > 2 only reduces limit/2 operations
+    {
+        if(mark[p]){ //NloglogN complexity sieve
+            for(int i=p*p;i<=limit;i+=p){
+                mark[i]=false;
+            }
+        }
+        //complexity below is NlogN
+        //if (mark[p] == true){ for(ll i=p*2; i<=limit; i+=p) mark[i] = false; } //lot of repetitive work with start from p*2   
+    }
+    for (ll p=2; p<=limit; p++)     
+    {   
+        if (mark[p] == true)    
+        {   
+            prime.emplace_back(p);                          //prime is a vector which stores prime numbers 
+            vect.emplace_back(p);                           //emplace_back is faster than push_back   
+        }   
+    }  
 } 	
 void segmentedSieve(ll n)                 //Function to implement Segmented Sieve	
 { 	
