@@ -147,6 +147,7 @@ Please discuss it with us first before creating [new-issue](https://github.com/r
     - Introduction To Algorithms By Thomas H. Cormen
     - Java: The Complete Reference By Herbert Schildt
     - Object Oriented Programming with C++ by E Balaguruswamy
+    - Algorithms: A Functional Programming Approach By Fethi A. Rabhi and Guy Lapalme
 - Websites :computer:
     - [GeeksforGeeks](http://www.geeksforgeeks.org)
     - [hackerearth](https://www.hackerearth.com/notes)
