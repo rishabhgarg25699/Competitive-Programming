@@ -1,0 +1,25 @@
+from copy import deepcopy
+for _ in range(int(input())):
+    s = list(input())
+    p = list(input())
+    for i in p:
+        s.remove(i)
+    s.sort()
+    ne = deepcopy(s)
+    ne.append(p[0])
+    ne = sorted(ne, reverse=True)
+    if p[0] not in s:
+        print(''.join(s[0:len(ne) - ne.index(p[0]) - 1]) + ''.join(p) + ''.join(s[len(ne) - ne.index(p[0]) - 1:]))
+    else:
+        air = ''.join(s[0:s.index(p[0])]) + ''.join(p) + ''.join(s[s.index(p[0]):])
+        print(min(air,''.join(s[0:len(ne) - ne.index(p[0]) - 1]) + ''.join(p) + ''.join(s[len(ne) - ne.index(p[0]) - 1:])))
+        
+###Chef has a string S. He also has another string P, called pattern. He wants to find the pattern in S, but that might be impossible. Therefore, he is willing to reorder the characters of S in such a way that P occurs in the resulting string (an anagram of S) as a substring.
+Since this problem was too hard for Chef, he decided to ask you, his genius friend, for help. Can you find the lexicographically smallest anagram of S that contains P as substring?
+Note: A string B is a substring of a string A if B can be obtained from A by deleting several (possibly none or all) characters from the beginning and several (possibly none or all) characters from the end.
+Input :
+The first line of the input contains a single integer T denoting the number of test cases. The description of T test cases follows.
+The first line of each test case contains a single string S.
+The second line contains a single string P.
+Output :
+For each test case, print a single line containing one string ― the smallest anagram of S that contains P. ###
