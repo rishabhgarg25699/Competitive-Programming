@@ -144,7 +144,9 @@ Please discuss it with us first before creating [new-issue](https://github.com/r
     - Introduction To Algorithms By (CLRS) Cormen, Leiserson, Rivest , Stein 
     - Java: The Complete Reference By Herbert Schildt
     - Object Oriented Programming with C++ by E Balaguruswamy
+    - Algorithms: A Functional Programming Approach By Fethi A. Rabhi and Guy Lapalme
     - The C++ Programming Language by Bjarne Stroutstrap
+
 - Websites :computer:
     - [GeeksforGeeks](http://www.geeksforgeeks.org)
     - [hackerearth](https://www.hackerearth.com/notes)
