@@ -1,14 +1,16 @@
 # Bug - Queue is not Implemented, use a linkedlist to implement the queue. 
 # Solution - : A simple Python program to Implement a queue using a linked list.
-# Author - Abhinav Arora
-#Email -: abhinavaroraa14799@gmail.com
+# Author - Abhinav Arora.
+#Email -: abhinavaroraa14799@gmail.com.
 
+#No Random Search as only sequential search is carried out within each element.
 
+# Node Class Defined.
 class Node(object):
     def __init__(self, data, Next = None):
         self.data = data
         self.next = Next
-
+# It initialized the element data and the next pointer reference. 
     def getData(self):
         return self.data
 
@@ -20,19 +22,19 @@ class Node(object):
 
     def setNext(self, newNext):
         self.next = newNext
-
+# Defined the LinkedList Class.
 class LinkedList(object):
     def __init__(self):
         self.head = None
-
+# Empty list check Defined.
     def isEmpty(self):
         return self.head == None
-
+# Defined Adding New Node
     def add(self, element):
         temp = Node(element)
         temp.setNext(self.head)
         self.head = temp
-
+# Defined size of the node
     def size(self):
         current = self.head
         count = 0
@@ -40,7 +42,7 @@ class LinkedList(object):
             count = count + 1
             current = current.getNext()
         return count
-
+# Defined search for node
     def search(self,item):
         current = self.head
         found = False
@@ -51,7 +53,7 @@ class LinkedList(object):
                 current = current.getNext()
 
         return found
-
+# Defined Removal of the Node
     def remove(self,item):
         current = self.head
         previous = None
