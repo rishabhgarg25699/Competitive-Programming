@@ -1,13 +1,10 @@
 [![Gitter](https://badges.gitter.im/Algo_Ds_Notes/Algo_Ds_Notes.svg)](https://gitter.im/rishabhgarg25699)
-<a href='https://play.google.com/store/apps/details?id=com.Scibot.aniket.algopack&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' height="35"></a>
 
 Join with me on telegram group  https://t.me/joinchat/GL4Y8RREZbz-Cp78R869CQ
 
 ## Welcome to Algorithm and Data Structure Notes :clipboard:
 
 Our open source community is focussed on understanding the concepts and while doing so, whenever someone gets trapped, they can see one way to code in any language they want. So, we are developing a repository having implementation in as many languages as we can.
-
-> [Index](INDEX.md)
 
 ## Steps to follow :scroll:
 
@@ -27,7 +24,7 @@ $ git clone https://github.com/Your_Username/Algo_Ds_Notes.git
 
 > This makes a local copy of repository in your machine.
 
-Once you have cloned the `Algo_Ds_Notes` repository in Github, move to that folder first using change directory command on linux and Mac.
+Once you have cloned the `Algo_Ds_Notes` repository in Github, move to that folder first using change directory command on Linux, Windows and Mac.
 
 ```sh
 # This will change directory to a folder Algo_Ds_Notes
@@ -133,7 +130,7 @@ Then add a title and description to your pull request that explains your preciou
 
 We love to have `articles` and `codes` in different languages and `betterment` of existing ones.
 
-Please discuss it with us first by creating new issue.
+Please discuss it with us first before creating [new-issue](https://github.com/rishabhgarg25699/Competitive-Programming/issues/new).
 
 :tada: :confetti_ball: :smiley: _**Happy Contributing**_ :smiley: :confetti_ball: :tada:
 
@@ -144,12 +141,18 @@ Please discuss it with us first by creating new issue.
     - Data Structures with C by Schaum Series
     - Data Structures: A Pseudocode Approach with C by Richard F. Gilberg
     - Fundamentals Of Data Structures in C by Horowitz
-    - Introduction To Algorithms By Thomas H. Cormen
+    - Introduction To Algorithms By (CLRS) Cormen, Leiserson, Rivest , Stein 
     - Java: The Complete Reference By Herbert Schildt
     - Object Oriented Programming with C++ by E Balaguruswamy
+    - Algorithms: A Functional Programming Approach By Fethi A. Rabhi and Guy Lapalme
+    - The C++ Programming Language by Bjarne Stroutstrap
+
 - Websites :computer:
     - [GeeksforGeeks](http://www.geeksforgeeks.org)
     - [hackerearth](https://www.hackerearth.com/notes)
-    - [topcoder](https://www.topcoder.com/community/data-science/data-science-tutorials)
+    - [topcoder](https://www.topcoder.com/community/competitive-programming/tutorials/)
     - [tutorialspoint](http://www.tutorialspoint.com)
     - [Wikipedia](https://en.wikipedia.org)
+    - [Codeforces](https://codeforces.com)
+    - [Codechef](https://codechef.com)
+    - [OEIS](https://oeis.org/)
